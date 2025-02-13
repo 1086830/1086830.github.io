@@ -1,20 +1,50 @@
 body {
-align: center;
-background-color: rgb(0%, 90%, 50%);
-}
-
-.Main {text-align: center;}
-
-header {
-background: #0074cc;
-padding: 20px;
-color: white;
-}
-
-#edu-list {
-list-style-type: none;
-}
-
-#skills-list {
-list-style-type: none;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+        }
+        #profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #profile p {
+            margin-top: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content h3 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
