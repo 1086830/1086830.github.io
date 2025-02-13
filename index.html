@@ -47,6 +47,28 @@
             </ul>
         </section>
     </div>
+
+  <form id="messageForm">
+        <label for="messageInput">Leave a Message:</label>
+        <input type="text" id="messageInput" name="message" required>
+        <button type="submit">Submit</button>
+    </form>
+<script>
+  document.getElementById("messageForm").onsubmit = function(event) {
+    event.preventDefault();
+    let message = document.getElementById("messageInput").value.trim();
+    
+    if (message) {
+        window.alert("Thank you for leaving a message!");
+    } else {
+        window.alert("Please enter a message before submitting.");
+    }
+    
+    document.getElementById("messageInput").value = "";
+};
+
+</script>
+  
 </body>
 </html>
 </html>
