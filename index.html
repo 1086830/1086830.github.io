@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title>Muhammad Fahim</title>
-  <meta name="description" content="Your personal portfolio">
-
-  <link href="styles.css" rel="stylesheet">
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Muhammad Fahim</title>
   <meta name="description" content="Muhammad Fahim's personal portfolio">
   
   <link href="styles.css" rel="stylesheet">
+  
+  <script>
+    function showThankYouMessage() {
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+      if (name && message) {
+        alert("Thank you for leaving a message, " + name + "!");
+      } else {
+        alert("Please fill in both fields.");
+      }
+    }
+  </script>
 </head>
 <body>
   <section class="main">
@@ -35,8 +36,8 @@
             <b>E-mail:</b> binfah222@gmail.com <br>
             Undergraduate Student, Abu Dhabi University<br>
             <a href="YourCv.pdf">Download CV</a><br>
-            <a href="https://ae.linkedin.com/in/muhammad-fahim-3b0754226" type="_blank">
-              <img src="linkedin.png" alt="LinkedIn" target="_blank" style="width:20px; height:20px; border:0; margin-top:5px;">
+            <a href="https://ae.linkedin.com/in/muhammad-fahim-3b0754226" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn" style="width:20px; height:20px; border:0; margin-top:5px;">
             </a>
           </p>
         </div>
@@ -79,9 +80,20 @@
           <li><b>Web Development:</b> HTML, CSS</li>
           <li><b>Other Skills:</b> Content Development, Project Management, Critical Thinking</li>
         </ul>
+
+        <hr>
+        <h3>Leave a Message</h3>
+        <form onsubmit="event.preventDefault(); showThankYouMessage();">
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="message">Your Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
     </div>
   </section>
 </body>
-</html>
 </html>
